@@ -3,6 +3,8 @@ import pandas
 
 import json
 import requests
+import snowflake
+import snowflake.connector
 
 streamlit.title('Diner')
 
