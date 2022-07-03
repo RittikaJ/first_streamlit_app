@@ -29,7 +29,7 @@ streamlit.dataframe(fruits_to_show)
 
 # new section
 streamlit.header("Fruityvice Fruit Advice!")
-fruit_choice = streamlit.text_input('What fruit would you like information about?')
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('Thank you for selecting ', fruit_choice)
 
 
@@ -44,6 +44,6 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 
-fruit_eat_choice = streamlit.text_input('What fruit would you like to eat','Kiwi')
+fruit_eat_choice = streamlit.text_input('What fruit would you like to eat')
 streamlit.write('The user entered ', fruit_eat_choice)
 
